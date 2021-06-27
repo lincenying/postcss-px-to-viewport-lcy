@@ -1,7 +1,7 @@
 {
-  "name": "postcss-px-to-viewport-lcy",
+  "name": "postcss-px-to-viewport",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
-  "version": "1.1.2",
+  "version": "1.1.1",
   "author": "Dmitry Karpunin <koderfunk@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -24,47 +24,17 @@
     "postcss",
     "postcss-plugin"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
-    "test": "jest",
-    "prepare": "husky install",
-    "commit": "git add . && git cz",
-    "format": "prettier \"./**/*.js\" --write",
-    "lint": "eslint \"./**/*.js\" --fix"
+    "test": "jest spec/*.spec.js"
+  },
+  "dependencies": {
+    "object-assign": ">=4.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
-    "@types/jest": "^26.0.22",
-    "commitizen": "^4.2.3",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.24.0",
-    "eslint-config-prettier": "^8.2.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "husky": "^6.0.0",
-    "jest": "^26.6.3",
-    "lint-staged": "^10.5.4",
-    "postcss": ">=8.0.0",
-    "prettier": "^2.2.1"
+    "jest": "^25.4.0",
+    "postcss": ">=5.0.2"
   },
   "peerDependencies": {
-    "postcss": ">=8.0.0"
-  },
-  "engines": {
-    "node": ">= 12.0.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "lint-staged": {
-    "*.js": "npm run lint"
+    "postcss": ">=5.0.2"
   }
 }

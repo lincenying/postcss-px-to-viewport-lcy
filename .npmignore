@@ -1,15 +1,6 @@
 .idea
-.husky
-.editorconfig
-.eslintignore
-.eslintrc.js
 .gitignore
-commitlint.config.js
 npm-debug.log*
 node_modules
 spec
-jsconfig.json
 package-lock.json
-pnpm-lock.yaml
-prettier.config.js
-yarn.lock
